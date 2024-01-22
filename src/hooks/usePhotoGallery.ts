@@ -109,6 +109,7 @@ export interface UserPhoto {
   webviewPath?: string;
 }
 
+
 export async function base64FromPath(path: string): Promise<string> {
   const response = await fetch(path);
   const blob = await response.blob();
